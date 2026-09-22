@@ -5,39 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Khincc's portfolio, focused on thoughtful digital design and creative development.">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
     <title>Khincc — Creative Developer</title>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
-        <a class="brand" href="index.html"><span class="brand-mark"></span>Khincc / Studio</a>
-        <nav class="main-nav" aria-label="Main navigation">
-            <a class="active" href="index.html">Home</a>
-            <a href="portfolio.html">Work</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-inner">
+            <a class="brand" href="index.html"><span class="brand-mark"></span>Khincc / Studio</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="portfolio.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <span class="header-status">Open for 2026</span>
+                <a class="button small header-cta" href="contact.html">Start a project</a>
+            </div>
+        </div>
     </header>
-    <main class="page-shell">
+    <main class="page-shell" id="main">
         <section class="hero">
             <div class="hero-copy">
-            <p class="eyebrow">Creative Multimedia / Indonesia</p>
-                <h1>Crafting standout brands & content — 6+ years experience.</h1>
-                <p>I help brands and businesses build digital experiences that feel clear, distinctive, and worth remembering.</p>
-                <div class="button-row">
+                <p class="eyebrow" data-reveal>Creative Multimedia / Indonesia</p>
+                <h1 data-reveal>Crafting standout brands &amp; content — 6+ years experience.</h1>
+                <p class="lede" data-reveal>I help brands and businesses build digital experiences that feel clear, distinctive, and worth remembering.</p>
+                <div class="button-row" data-reveal>
                     <a class="button primary" href="portfolio.html">View selected work <span aria-hidden="true">↗</span></a>
                     <a class="button" href="contact.html">Start a conversation</a>
                 </div>
+                <div class="hero-meta" data-reveal>
+                    <span>Design &amp; art direction</span>
+                    <span>Motion &amp; editing</span>
+                    <span>Social content</span>
+                </div>
             </div>
-            <div class="hero-image"><img src="CONTENT/LPK English.jpg" alt="Promotional poster design for Fluent English language courses"></div>
+            <figure class="hero-figure" data-reveal>
+                <div class="hero-image"><img src="CONTENT/LPK English.jpg" alt="Promotional poster design for Fluent English language courses"></div>
+                <figcaption class="media-caption"><span>Fluent English — poster series</span><span>Education campaign</span></figcaption>
+            </figure>
+        </section>
+        <section class="marquee" aria-label="Areas of practice">
+            <div class="marquee-track">
+                <div class="marquee-set">
+                    <span class="marquee-item">Campaign design</span>
+                    <span class="marquee-item">Editorial &amp; infographic</span>
+                    <span class="marquee-item">Short-form video</span>
+                    <span class="marquee-item">Social content</span>
+                    <span class="marquee-item">Art direction</span>
+                    <span class="marquee-item">Motion graphics</span>
+                </div>
+                <div class="marquee-set" aria-hidden="true">
+                    <span class="marquee-item">Campaign design</span>
+                    <span class="marquee-item">Editorial &amp; infographic</span>
+                    <span class="marquee-item">Short-form video</span>
+                    <span class="marquee-item">Social content</span>
+                    <span class="marquee-item">Art direction</span>
+                    <span class="marquee-item">Motion graphics</span>
+                </div>
+            </div>
         </section>
         <section class="section">
-            <div class="section-heading"><h2>Selected work</h2><p>A few collaborations that have shaped how I work and think.</p></div>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 — Portfolio</p>
+                    <h2>Selected work</h2>
+                </div>
+                <p>A few collaborations that have shaped how I work and think.</p>
+            </div>
             <div class="project-grid">
-                <a class="project-card" href="portfolio.html#atlas"><div class="project-image"><img src="CONTENT/Institution1.jpg" alt="Poster design about avoiding online loan scams for Penerangan Lanal Sangatta"></div><div class="project-meta"><div><h3>Online Loan Awareness</h3><p>Campaign design / Social media</p></div><span>2026</span></div></a>
-                <a class="project-card" href="portfolio.html#ruang"><div class="project-image"><img src="CONTENT/Institution2.jpg" alt="Poster design about preventing fraud and exploitation on social media"></div><div class="project-meta"><div><h3>Digital Safety Campaign</h3><p>Public information / Illustration</p></div><span>2026</span></div></a>
+                <a class="project-card" href="portfolio.html#atlas" data-reveal><div class="project-image"><img src="CONTENT/Institution1.jpg" alt="Poster design about avoiding online loan scams for Penerangan Lanal Sangatta"></div><div class="project-meta"><div><h3>Online Loan Awareness</h3><p>Campaign design / Social media</p></div><span>2026</span></div></a>
+                <a class="project-card" href="portfolio.html#ruang" data-reveal><div class="project-image"><img src="CONTENT/Institution2.jpg" alt="Poster design about preventing fraud and exploitation on social media"></div><div class="project-meta"><div><h3>Digital Safety Campaign</h3><p>Public information / Illustration</p></div><span>2026</span></div></a>
             </div>
         </section>
-        <section class="section statement"><h2>Good design makes room for better ideas.</h2><div class="statement-copy"><p>My process starts with curiosity, honest conversations, and an eye for the small details. The final work should look considered and feel effortless to use.</p><a class="button" href="contact.html">Let’s work together <span aria-hidden="true">↗</span></a></div></section>
-        <footer><span>© 2026 Khincc Studio</span><span>Made with intention.</span></footer>
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">02 — Capabilities</p>
+                    <h2>Quietly thorough, from idea to output.</h2>
+                </div>
+                <p>One studio, one thread — strategy, visuals, and the edit that pulls it together.</p>
+            </div>
+            <div class="service-list">
+                <div class="service-row" data-reveal><span class="service-index">01</span><h3>Campaign &amp; poster design</h3><p>Public-information campaigns, poster series, and key visuals for institutions and brands.</p><span class="service-tags">Art direction / Print</span></div>
+                <div class="service-row" data-reveal><span class="service-index">02</span><h3>Editorial &amp; infographic</h3><p>Information design that turns dense material into something easy to read and share.</p><span class="service-tags">Layout / Data</span></div>
+                <div class="service-row" data-reveal><span class="service-index">03</span><h3>Short-form video editing</h3><p>Reels, TikToks, and review edits with pacing and sound built for the feed.</p><span class="service-tags">Motion / Sound</span></div>
+                <div class="service-row" data-reveal><span class="service-index">04</span><h3>Social content systems</h3><p>Repeatable visual templates so every post still feels considered and on-brand.</p><span class="service-tags">Systems / Templates</span></div>
+            </div>
+        </section>
+        <section class="statement" data-reveal>
+            <div>
+                <p class="eyebrow">03 — Approach</p>
+                <h2>Good design makes room for better ideas.</h2>
+            </div>
+            <div class="statement-copy">
+                <p>My process starts with curiosity, honest conversations, and an eye for the small details. The final work should look considered and feel effortless to use.</p>
+                <a class="button" href="contact.html">Let’s work together <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
+    <footer class="site-footer">
+        <div class="page-shell">
+            <div class="footer-main">
+                <div>
+                    <p class="footer-brand">Khincc / Studio</p>
+                    <p class="footer-note">Creative multimedia studio based in Indonesia — design, motion, and content made with intention.</p>
+                </div>
+                <nav class="footer-col" aria-label="Footer navigation">
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Work</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="footer-col">
+                    <h4>Elsewhere</h4>
+                    <a href="https://www.instagram.com/khinccofficial/" target="_blank" rel="noopener">Instagram ↗</a>
+                    <a href="https://www.tiktok.com/@khinccofficial" target="_blank" rel="noopener">TikTok ↗</a>
+                    <a href="https://www.youtube.com/@khinccofficial" target="_blank" rel="noopener">YouTube ↗</a>
+                    <a href="mailto:taufiqsholikhin@gmail.com">Email ↗</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Khincc Studio</span>
+                <span>Made with intention.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
