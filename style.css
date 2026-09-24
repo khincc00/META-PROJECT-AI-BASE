@@ -740,3 +740,18 @@ p { margin-bottom: 18px; }
 	.footer-main { grid-template-columns: 1fr; gap: 30px; }
 	.footer-bottom { justify-content: flex-start; }
 }
+
+/* Fallback when a social thumbnail file is not uploaded yet */
+.social-image.is-missing {
+	background: linear-gradient(145deg, var(--mint, #dff3ec), var(--white, #fff));
+	padding: clamp(18px, 2.4vw, 28px);
+}
+
+.social-image.is-missing::before {
+	color: var(--ink, #14211f);
+	content: attr(data-fallback);
+	font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
